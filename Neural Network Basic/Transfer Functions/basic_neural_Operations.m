@@ -1,0 +1,17 @@
+% How to accomplish Neural network mathmatics in matlab
+% basic 1 neuron network with 4 input and 1 output, and hardlim transfer
+% function
+
+input=rand(1,4); 5 % input vector
+weights=rand(1,4); % weigths 
+
+Wp= input.*weights; %applying dot product
+
+bias=0.5 ; % take bias =0.5
+
+%find n=w*p+b
+n=Wp+bias;
+
+%find output a
+a=purelin(n);
+plot(input,a,'r*');
