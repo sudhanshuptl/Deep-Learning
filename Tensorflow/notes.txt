@@ -1,0 +1,2 @@
+FOR /f "tokens=*" %i IN ('docker-machine env --shell cmd default') DO %i
+docker run -it -p 8888:8888 b.gcr.io/tensorflow/tensorflow
